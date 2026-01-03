@@ -16,6 +16,9 @@ public class UserDetails {
     @Column(length = 100,nullable = false)
     private String password;
 
+    @Column(nullable = false)
+    private Integer active;
+
     public String getLoginID() {
         return loginID;
     }
@@ -38,5 +41,13 @@ public class UserDetails {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Integer getActive() {
+        return active;
+    }
+
+    public void setActive(Integer active) {
+        this.active = active;
     }
 }
